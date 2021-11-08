@@ -585,6 +585,90 @@ if __name__ == '__main__':
     print(sed('pattern', 'replace', 'source', 'dest'))
 
 
+# In[1]:
+
+
+from __future__ import print_function, division
+
+
+# In[2]:
+
+
+def sed(pattern, replace, source, dest):
+    pattern: string
+    replace: string
+    source: sgb-words.txt
+    dest: words.txt
+    fin = open('sgb-words.txt', 'r')
+    fout = open('words.txt', 'w')
+    for line in fin:
+        line = line.replace(pattern, replace)
+        fout.write(line)
+    fin.close()
+    fout.close()
+
+
+# In[3]:
+
+
+def main():
+    pattern = 'pattern'
+    replace = 'replace'
+    source = 'sgb-words.txt'
+    dest = source + '.replaced'
+    sed(pattern, replace, source, dest)
+
+
+# In[4]:
+
+
+if __name__ == '__main__':
+    main()
+    print(sed('pattern', 'replace', 'source', 'dest'))
+
+
+# In[5]:
+
+
+from __future__ import print_function, division
+
+
+# In[6]:
+
+
+def sed(pattern, replace, source, dest):
+    pattern: string
+    replace: string
+    source: sgb-words.txt
+    dest: words.txt
+    fin = open('sgb-words.txt', 'r')
+    fout = open('words.txt', 'w')
+    for line in fin:
+        line = line.replace(pattern, replace)
+        fout.write(line)
+    fin.close()
+    fout.close()
+
+
+# In[7]:
+
+
+def main():
+    pattern = 'pattern'
+    replace = 'replace'
+    source = 'words.txt'
+    dest = source + '.replaced'
+    sed(pattern, replace, source, dest)
+
+
+# In[8]:
+
+
+if __name__ == '__main__':
+    main()
+    print(sed('pattern', 'replace', 'source', 'dest'))
+
+
 # In[ ]:
 
 
